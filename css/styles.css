@@ -34,3 +34,20 @@ html, body {
     border-radius: 50px;
     text-align: center;
 }
+
+a {
+    font-size: 22px;
+    color: #F0F;
+} 
+
+.cascading-parent h2 {
+    color: #FD0;
+    font-size: 50px;
+    background-color: rgb(255,0,0,0.4);
+    width: 800px;
+}
+
+.cascading-parent a {
+    font-size: 32px;
+    color: #CCC;
+}
