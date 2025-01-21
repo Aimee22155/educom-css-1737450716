@@ -16,19 +16,21 @@ html, body {
     color: #FFF;
     padding: 20px;
     margin: 10px;
-    font-size: 14px;
+    font-size: 20px;
     background-color: rgba(255,0,0,0.4);
     display: inline-block;
 }
 
 .cascading-parent {
-    font-weight: bold;
-    color: #FFF;
+    font-weight: bolt;
+    color: #000;
 }
 
 .cascading-child {
-    background-color: #000;
-    width: 200px;
-    height: 200px;
-    color: #FF0 !important;
+    background-color: rgb(199, 235, 157);
+    width: 180px;
+    height: 150px;
+    border: 2px solid rgba(20, 188, 126, 0.285);
+    border-radius: 50px;
+    text-align: center;
 }
