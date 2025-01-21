@@ -51,3 +51,22 @@ a {
     font-size: 32px;
     color: #CCC;
 }
+
+
+.site-font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.site-color {
+    background-color: rgb(35, 38, 227);
+    color: #54d71b;
+}
+
+.site-square {
+    width: 600px;
+    height: 100px;
+    border: 2px solid rgba(20, 188, 126, 0.285);
+    border-radius: 50px 10px;
+    text-align: center;
+}
