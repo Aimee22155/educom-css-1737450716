@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header section*/
+.banner {
+    background-color: #b12e2e;
+    color: #000;
+    padding: 30PX;
+    height: 5%;
+}
+
+.logo {
+   width: 50%;
+   text-align: left;
+   font-weight: bold;
+   display: inline-block;
+}
+
+.menu {
+    width: 49%;
+    text-align: right;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* CONTENT SECTION */
+.content {
+    display: flex;
+    background-color: #FFF;
+    justify-content: center;
+    padding: 50px;
+    height: 50%;
+    align-items: center;
+}
+
+.block {
+    background-color: rgba(176, 170, 170, 0.599);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 40%;
+    height: 75%;
+    margin: 5px;
+    border: 0px solid transparent;
+    border-radius: 10%;
+    transition: all 0.3s ease;
+    -ms-zoom-animation: default;
+    text-align: center;
+    font-size: 25px; 
+    font-weight: bold;
+    color: #FFF;
+}
+
+.block:hover {
+    border: 5px solid transparent;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+/*footer section*/
+.footer {
+    background-color: #c4c4c4ea;
+    color: #FFF;
+    padding: 40PX;
+    height: 5%;
+    margin: 0%;
+    font-size: 20px;
+}
+
+.Footerblock1 {
+    width: 50%;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.Footerblock2 {
+    width: 49%;
+    text-align: right;
+    vertical-align: middle;
+    display: inline-block;
+}
