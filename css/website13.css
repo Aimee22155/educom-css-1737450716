@@ -16,27 +16,59 @@ html, body {
     justify-content: space-between;
 }
 
+.menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-trigger {
+    background-color:transparent;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    z-index: 5000 !important;
+}
+
+.menu-trigger:hover {
+    background-color: transparent;
+}
+
+.menu-trigger:hover .dropdown {
+    top: 0px;
+}
+
+.dropdown {
+    position: fixed;
+    top: -400px;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: rgb(112, 110, 110);
+    color:#FFF;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    padding: 40px;
+}
 
 /* CONTENT SECTION */
 .content {
     display: flex;
     background-color: #FFF;
     justify-content: center;
-    padding: 50px;
+    padding: 120px;
     height: 50%;
-    align-items: center;
 }
 
-.block-1 {
-    background-image: url(https://as1.ftcdn.net/v2/jpg/00/92/58/28/1000_F_92582804_9G6V5hKhcnCJ60w2I87fqOTJmgQEySTy.jpg);
+.block {
     background-position: center center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: inline-block;
     width: 30%;
     height: 300px;
-    margin: 5px;
-    border: 0px solid transparent;
+    margin: 10px;
     border-radius: 10%;
     transition: all 0.3s ease;
     text-align: center;
@@ -44,70 +76,25 @@ html, body {
     font-weight: bold;
     color: #FFF;
     align-content: center; 
-    -ms-zoom-animation: default
+}
+
+.block-1 {
+    background-image: url(https://as1.ftcdn.net/v2/jpg/00/92/58/28/1000_F_92582804_9G6V5hKhcnCJ60w2I87fqOTJmgQEySTy.jpg);
 }
 
 .block-2 {
     background-image: url(https://monument.heritage.brussels/medias/buildings/10001053/10001053_0008_M02.jpg);
-    background-position: center center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 30%;
-    height: 300px;
-    margin: 5px;
-    border: 0px solid transparent;
-    border-radius: 10%;
-    transition: all 0.3s ease;
-    -ms-zoom-animation: default;
-    text-align: center;
-    font-size: 25px; 
-    font-weight: bold;
-    color: #FFF;
-    align-content: center;
-    -ms-zoom-animation: default; 
 }
 
 .block-3 {
     background-image: url(https://www.repro.nl/media/catalog/product/1/5/15479555__brooklyn_bridge-bw_4.jpg);
-    background-position: center center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: inline-block;
+}
+
+.block:hover {
+    transform: scale(1.1);
     width: 30%;
     height: 300px;
-    margin: 5px;
-    border: 0px solid transparent;
-    border-radius: 10%;
-    transition: all 0.3s ease;
-    -ms-zoom-animation: default;
-    text-align: center;
-    font-size: 25px; 
-    font-weight: bold;
-    color: #FFF;
-    align-content: center;
-    -ms-zoom-animation: default; 
-}
-
-.block-1:hover {
-    border: 5px solid transparent;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-}
-
-.block-2:hover {
-    border: 5px solid transparent;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-}
-
-.block-3:hover {
-    border: 5px solid transparent;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    margin: 10px 20px;
 }
 
 /*footer section*/
@@ -116,7 +103,6 @@ html, body {
     color: #FFF;
     padding: 40PX;
     height: 5%;
-    margin: 0%;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
